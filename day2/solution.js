@@ -3,6 +3,9 @@ var input = fs.readFileSync('input.txt', 'utf8');
 var parsedInput = input.split(/\r?\n/);
 
 // PART 1
+//Time complexity: O(n * m) where n is the number of lines and m is the number of elements in each line
+//Space complexity: O(m) where m is the number of elements in each line
+
 // const isMonotonic = (nums) => {
 //   const direction = nums[1] - nums[0];
 
@@ -66,6 +69,9 @@ const lineIsValid = (nums) => {
   }
   return true;
 };
+
+//Time complexity: O(n * m^2) where n is the number of lines and m is the number of elements in each line
+//Space complexity: O(m) where m is the number of elements in each line
 
 const solution = (parsedInput) => {
   let result = 0;
