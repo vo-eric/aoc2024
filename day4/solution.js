@@ -3,6 +3,9 @@ var input = fs.readFileSync('input.txt', 'utf8');
 const rows = input.trim().split('\n'); // Split into rows by newlines
 const newInput = rows.map((row) => row.trim().split(''));
 
+//PART 1
+// Time complexity: O(n * m) where n is the length of the input and m is the length of the row
+// Space complexity: O(1)
 const solution = (input) => {
   let result = 0;
   const dirs = [
