@@ -22,6 +22,8 @@ var input = fs.readFileSync('input.txt', 'utf8');
 // };
 
 //PART 2
+//Time complexity: O(n) where n is the number of characters in the input
+//Space complexity: O(m) where m is the number of operations from the input
 const solution = (input) => {
   let result = 0;
   const regex = /(mul\(\d+,\d+\)|do\(\)|don't\(\))/g;
